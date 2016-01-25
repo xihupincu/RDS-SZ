@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>zju.cxlab.RDS-SZ</groupId>
+    <artifactId>dbManager</artifactId>
+    <version>1.0-SNAPSHOT</version>
+
+    <build>
+        <plugins>
+            <plugin>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <configuration>
+                    <encoding>UTF-8</encoding>
+                    <source>1.6</source>
+                    <target>1.6</target>
+                </configuration>
+            </plugin>
+            <plugin>
+                <artifactId>maven-resources-plugin</artifactId>
+                <configuration>
+                    <encoding>UTF-8</encoding>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+
+    <dependencies>
+    <dependency>
+            <groupId>classes12</groupId>
+            <artifactId>classes12</artifactId>
+            <version>1.0</version>
+        </dependency>
+        <dependency>
+            <groupId>cim</groupId>
+            <artifactId>cim</artifactId>
+            <version>11r01</version>
+        </dependency>
+
+    </dependencies>
+    <distributionManagement>
+        <repository>
+            <id>nexus-releases</id>
+            <name>project-nexus-releases</name>
+            <url>http://10.15.194.25:8081/nexus/content/repositories/releases</url>
+        </repository>
+        <snapshotRepository>
+            <id>nexus-snapshots</id>
+            <name>project-nexus-snapshots</name>
+            <url>http://10.15.194.25:8081/nexus/content/repositories/snapshots</url>
+        </snapshotRepository>
+    </distributionManagement>
+
+
+</project>

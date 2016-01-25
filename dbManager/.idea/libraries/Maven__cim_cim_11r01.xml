@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: cim:cim:11r01">
+    <CLASSES>
+      <root url="jar://D:/repo/cim/cim/11r01/cim-11r01.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://D:/repo/cim/cim/11r01/cim-11r01-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://D:/repo/cim/cim/11r01/cim-11r01-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
