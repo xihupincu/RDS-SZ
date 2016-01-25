@@ -45,3 +45,19 @@ $RECYCLE.BIN/
 Network Trash Folder
 Temporary Items
 .apdisk
+cimntp-SZ/cimntp_shsn.iml
+*.xml
+
+# Package Files #
+*.jar
+*.war
+*.ear
+
+# Compiled Object files
+*.o
+*.obj
+
+# Compiled Dynamic libraries
+*.so
+*.dylib
+*.dll

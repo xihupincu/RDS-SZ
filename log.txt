@@ -1,0 +1,4 @@
+1.造成ACLine is not connected with two stations的原因：XML文件中某些ACLine的两个terminal中的一个terminal没有connectivityNode信息
+2.造成Measurement value is not found of switch的原因：XML文件里某些开关的名字带空格，而PAS文件里的开关名字都没有空格，所以无法匹配出开关状态信息。已经修复此类问题。
+3.增穗甲线 240001403 两端Terminal属于同一个connectivityNode
+
