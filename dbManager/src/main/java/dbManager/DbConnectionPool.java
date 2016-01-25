@@ -33,12 +33,7 @@ public class DbConnectionPool {
      * 得到连接池中的一个连接
      */
     public synchronized Connection getConnection() {
-//        if (pool.size() > 0) {
-        if (false){
-            Connection conn = pool.get(0);
-            pool.remove(conn);
-            return conn;
-        } else {
+
             Connection conn = null;
             try {
                 Class.forName(ResourceManager.getDriverClass());
@@ -50,23 +45,9 @@ public class DbConnectionPool {
                 e.printStackTrace();
             }
             return conn;
-        }
-    }
-    public synchronized Connection getConnection4WeatherInfos() {
-
-            Connection conn = null;
-            try {
-                Class.forName(ResourceManager.getDriverClass());
-                conn = DriverManager.getConnection(ResourceManager.getUrl4WeatherInfos(), ResourceManager.getUsername4WeatherInfos(),ResourceManager.getPassword4WeatherInfos());
-                this.poolSize++;
-            } catch (ClassNotFoundException e) {
-                e.printStackTrace();
-            } catch (SQLException e) {
-                e.printStackTrace();
-            }
-            return conn;
 
     }
+
 
     /**
      * 创建初始的数据库连接

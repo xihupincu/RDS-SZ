@@ -8,40 +8,27 @@ public class ResourceManager {
 
     static {
         dbaResource = ResourceBundle.getBundle("config.dba");  //config目录下的dba.properties
-
-//        riskAssessPara = ResourceBundle.getBundle("config.riskAssessPara");  //config目录下的riskAssessPara.properties
     }
 
     public static String getDriverClass() {
         return dbaResource.getString("dbservice.connection.driver_class");
     }
-    public static String getDriverClass4WeatherInfos() {
-        return dbaResource.getString("dbservice.connection.driver_class4WeatherInfos");
-    }
+
 
     public static String getUrl() {
         return dbaResource.getString("dbservice.connection.url");
     }
-    public static String getUrl4WeatherInfos() {
-        return dbaResource.getString("dbservice.connection.url");
-    }
+
 
     public static String getUsername() {
         return dbaResource.getString("dbservice.connection.username");
     }
 
 
-    public static String getUsername4WeatherInfos() {
-        return dbaResource.getString("dbservice.connection.username");
-    }
-
     public static String getPassword() {
         return dbaResource.getString("dbservice.connection.password");
     }
 
-    public static String getPassword4WeatherInfos() {
-        return dbaResource.getString("dbservice.connection.password");
-    }
 
     public static int getPoolSize() {
         return Integer.valueOf(dbaResource.getString("dbservice.connection.poolSize"));
